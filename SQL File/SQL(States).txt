@@ -1,0 +1,174 @@
+create database project;
+use project;
+select * from aggregate_expenditure11n;
+select * from capital_expenditure11n;
+select * from gross_fiscal_deficits11n;
+select * from NOMINAL_GSDP_SERIES11n;
+
+
+
+create table aggregate_expenditure11n_5yr 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85) as Y1980_85 ,
+(Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90) as Y1985_90 ,
+(Y1990_91 + Y1991_92 + Y1992_93 + Y1993_94 + Y1994_95) as Y1990_95 ,
+(Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000) as Y1995_2000 ,
+(Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05) as Y2000_05 ,
+(Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10) as Y2005_10 ,
+(Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15) as Y2010_15,
+(Y2015_16) as Y2015_16 from aggregate_expenditure11n);
+
+SELECT * FROM aggregate_expenditure11n_5yr;
+
+create table capital_expenditure11n_5yr 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85) as Y1980_85 ,
+(Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90) as Y1985_90 ,
+(Y1990_91 + Y1991_92 + Y1992_93 + Y1993_94 + Y1994_95) as Y1990_95 ,
+(Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000) as Y1995_2000 ,
+(Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05) as Y2000_05 ,
+(Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10) as Y2005_10 ,
+(Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15) as Y2010_15,
+(Y2015_16) as Y2015_16 from capital_expenditure11n);
+
+SELECT * FROM capital_expenditure11n_5yr ;
+
+create table gross_fiscal_deficits11n_5yr 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85) as Y1980_85 ,
+(Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90) as Y1985_90 ,
+(Y1990_91 + Y1991_92 + Y1992_93 + Y1993_94 + Y1994_95) as Y1990_95 ,
+(Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000) as Y1995_2000 ,
+(Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05) as Y2000_05 ,
+(Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10) as Y2005_10 ,
+(Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15) as Y2010_15,
+(Y2015_16) as Y2015_16 from gross_fiscal_deficits11n);
+
+select * from gross_fiscal_deficits11n_5yr;
+
+create table NOMINAL_GSDP_SERIES11n_5yr 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85) as Y1980_85 ,
+(Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90) as Y1985_90 ,
+(Y1990_91 + Y1991_92 + Y1992_93 + Y1993_94 + Y1994_95) as Y1990_95 ,
+(Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000) as Y1995_2000 ,
+(Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05) as Y2000_05 ,
+(Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10) as Y2005_10 ,
+(Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15) as Y2010_15,
+(Y2015_16) as Y2015_16 from NOMINAL_GSDP_SERIES11n);
+
+1
+create table own_tax_revenues11n_5yr 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85) as Y1980_85 ,
+(Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90) as Y1985_90 ,
+(Y1990_91 + Y1991_92 + Y1992_93 + Y1993_94 + Y1994_95) as Y1990_95 ,
+(Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000) as Y1995_2000 ,
+(Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05) as Y2000_05 ,
+(Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10) as Y2005_10 ,
+(Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15) as Y2010_15,
+(Y2015_16) as Y2015_16 from own_tax_revenues11n);
+
+create table revenue_deficits11n_5yr 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85) as Y1980_85 ,
+(Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90) as Y1985_90 ,
+(Y1990_91 + Y1991_92 + Y1992_93 + Y1993_94 + Y1994_95) as Y1990_95 ,
+(Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000) as Y1995_2000 ,
+(Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05) as Y2000_05 ,
+(Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10) as Y2005_10 ,
+(Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15) as Y2010_15,
+(Y2015_16) as Y2015_16 from revenue_deficits11n);
+
+create table revenue_expenditure11n_5yr 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85) as Y1980_85 ,
+(Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90) as Y1985_90 ,
+(Y1990_91 + Y1991_92 + Y1992_93 + Y1993_94 + Y1994_95) as Y1990_95 ,
+(Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000) as Y1995_2000 ,
+(Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05) as Y2000_05 ,
+(Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10) as Y2005_10 ,
+(Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15) as Y2010_15,
+(Y2015_16) as Y2015_16 from revenue_expenditure11n);
+
+create table social_sector_expenditure11n_5yr 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85) as Y1980_85 ,
+(Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90) as Y1985_90 ,
+(Y1990_91 + Y1991_92 + Y1992_93 + Y1993_94 + Y1994_95) as Y1990_95 ,
+(Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000) as Y1995_2000 ,
+(Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05) as Y2000_05 ,
+(Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10) as Y2005_10 ,
+(Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15) as Y2010_15,
+(Y2015_16) as Y2015_16 from social_sector_expenditure11n);
+
+SELECT * FROM aggregate_expenditure11n_5yr;
+SELECT * FROM capital_expenditure11n_5yr ;
+select * from gross_fiscal_deficits11n_5yr;
+select * from NOMINAL_GSDP_SERIES11n_5yr;
+
+select * from own_tax_revenues11n_5yr;
+select * from revenue_deficits11n_5yr;
+select * from revenue_expenditure11n_5yr;
+select * from social_sector_expenditure11n_5yr;
+
+select * from aggregate_expenditure11n;
+select * from capital_expenditure11n;
+select * from gross_fiscal_deficits11n;
+select * from NOMINAL_GSDP_SERIES11n;
+select * from own_tax_revenues11n;
+select * from revenue_deficits11n;
+select * from revenue_expenditure11n;
+select * from social_sector_expenditure11n;
+
+create table Ngross_fiscal_deficits11 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85 + Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90 + Y1990_91 + Y1991_92 + 
+Y1992_93 + Y1993_94 + Y1994_95 + Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000 + Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05 + 
+Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10 + Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15 + Y2015_16) as yr from gross_fiscal_deficits11n);
+select * from Ngross_fiscal_deficits11;
+
+create table Naggregate_expenditure11 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85 + Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90 + Y1990_91 + Y1991_92 + 
+Y1992_93 + Y1993_94 + Y1994_95 + Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000 + Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05 + 
+Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10 + Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15 + Y2015_16) as yr from aggregate_expenditure11n);
+
+create table Ncapital_expenditure11
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85 + Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90 + Y1990_91 + Y1991_92 + 
+Y1992_93 + Y1993_94 + Y1994_95 + Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000 + Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05 + 
+Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10 + Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15 + Y2015_16) as yr from capital_expenditure11n);
+
+create table NNOMINAL_GSDP_SERIES11
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85 + Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90 + Y1990_91 + Y1991_92 + 
+Y1992_93 + Y1993_94 + Y1994_95 + Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000 + Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05 + 
+Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10 + Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15 + Y2015_16) as yr from NOMINAL_GSDP_SERIES11n);
+
+create table Nown_tax_revenues11 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85 + Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90 + Y1990_91 + Y1991_92 + 
+Y1992_93 + Y1993_94 + Y1994_95 + Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000 + Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05 + 
+Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10 + Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15 + Y2015_16) as yr from own_tax_revenues11n);
+
+create table Nrevenue_deficits11
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85 + Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90 + Y1990_91 + Y1991_92 + 
+Y1992_93 + Y1993_94 + Y1994_95 + Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000 + Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05 + 
+Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10 + Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15 + Y2015_16) as yr from revenue_deficits11n);
+
+create table Nrevenue_expenditure11 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85 + Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90 + Y1990_91 + Y1991_92 + 
+Y1992_93 + Y1993_94 + Y1994_95 + Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000 + Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05 + 
+Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10 + Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15 + Y2015_16) as yr from revenue_expenditure11n);
+
+create table Nsocial_sector_expenditure11 
+( select STATE, (Y1980_81 + Y1981_82 + Y1982_83 + Y1983_84 + Y1984_85 + Y1985_86 + Y1986_87 + Y1987_88 + Y1988_89 + Y1989_90 + Y1990_91 + Y1991_92 + 
+Y1992_93 + Y1993_94 + Y1994_95 + Y1995_96 + Y1996_97 + Y1997_98 + Y1998_99 + Y1999_2000 + Y2000_01 + Y2001_02 + Y2002_03 + Y2003_04 + Y2004_05 + 
+Y2005_06 + Y2006_07 + Y2007_08 + Y2008_09 + Y2009_10 + Y2010_11 + Y2011_12 + Y2012_13 + Y2013_14 + Y2014_15 + Y2015_16) as yr from social_sector_expenditure11n);
+
+select * from Ngross_fiscal_deficits11;
+select * from Naggregate_expenditure11;
+select * from Ncapital_expenditure11;
+select * from NNOMINAL_GSDP_SERIES11;
+select * from Nown_tax_revenues11;
+select * from Nrevenue_deficits11;
+select * from Nrevenue_expenditure11;
+select * from Nsocial_sector_expenditure11;
+
+
+
+top10
+
+
+select * from Ngross_fiscal_deficits11
+order by yr desc limit 10;
+
+
