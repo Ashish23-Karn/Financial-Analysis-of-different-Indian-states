@@ -1,12 +1,12 @@
 # Financial-Analysis-of-different-Indian-states
 --Introduction--
 
-The aim of the project is to study the various factors responsible for the impact on its citizens like Social Expenditure, Gross Fiscal Deficit, Tax collection, Nominal GDP, etc.
+As we know, India is a big country with a large population to serve. In such cases, it becomes necessary to study the various factors that can have an impact on the larger population for better transparency, reduced corruption and to help the policymakers to make the decisions. Analyzing the different state's data will help us in this regard to have an eye on the states which are doing great and the states which aren't.
 
 --Problem aimed to solve--
 
-As we know, India is a big country with a large population to serve. In such cases, it becomes necessary to study the various factors that can have an impact on the larger population for better transparency and reduced corruption. Analyzing the different state's data will help us in this regard to have an eye on the states which are doing great and the states which aren't. 
-
+The aim of the project is to study the various factors responsible to have an impact on the socio-economic fiber of the country such as Social Expenditure, Gross Fiscal Deficit, Tax collection, Nominal GDP, etc.
+ 
 --Data Description--
 
 1. Excel Files: This folder has an Excel workbook having the final Dashboard and worksheets having the cleaned dataset of different states in. XLSX format.
